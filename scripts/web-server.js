@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var tours = require('./toursController');
 // var events = require('./eventsController');
 var bodyParser = require('body-parser');
 var app = express();
@@ -13,6 +14,8 @@ app.use(bodyParser.json());
 // static serve pages in path without calling them at all
 // install all files in app directory without processing them at all, just pass out as they are
 app.use(express.static(rootPath + '/app'));
+
+// app.get('/data/tour', tours.getAll);
 
 // app.get('/data/event/:id', events.get);
 // app.get('/data/event', events.getAll);

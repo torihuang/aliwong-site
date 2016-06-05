@@ -1,3 +1,37 @@
-<div class='container-fluid'>
+<div class="jumbotron jumbo-home">
+  <div class='jumbotron-text'>
+    <h1>Ali Wong</h1>
+    <p>Ali Wong's standup special delves into her sexual adventures, hoarding, the rocky road to pregnancy, and why feminism is terrible.</p>
+    <br>
+    <br>
+<!--     <p><small>"Ali Wong’s ‘Baby Cobra’ is the most honest, rawest, funniest special I’ve seen in years. She has huge balls." <strong>-Marc Maron</strong></small></p>
+    <br>
+    <p><small>"Despite a tongue-in-cheek condemnation of feminism early in her first hourlong special, Baby Cobra, which came out on Netflix this past weekend, Ali Wong goes on to tell one of the most powerful jokes I've seen in a long time." <strong>-Vulture</strong></small></p>
+    <br>
+    <p><small>"Ali Wong is pregnant and funny as hell in Baby Cobra" <strong>-Angry Asian</strong> Man</small></p>
+    <br>
+    <br> -->
+    <button type='button' class='btn btn-default btn-lg' ng-click=''>Watch On Netflix</button>
+  </div>
+  <img src='../imgs/background.jpg' id='bg' class='img-responsive'>
+</div>
+
+<!-- <div class='container-fluid'>
   <img src='../imgs/background.jpg' class='img-responsive'>
+</div> -->
+
+<div class='container'>
+  <div class="page-header">
+    <h1>On Tour</h1>
+  </div>
+
+  <div ng-controller='TourController' id='tour-list'>
+    <div ng-repeat='tour in tours'>
+      <div class='list-group'>
+        <div ng-repeat='stop in tour.tours'>
+          <a href="#" class="list-group-item"><span class='list-group-left'>{{stop.city}}</span><span class='list-group-right'>{{stop.date}}</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

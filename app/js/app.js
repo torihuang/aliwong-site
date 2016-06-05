@@ -1,6 +1,6 @@
 'use strict';
 
-var aliwongApp = angular.module('aliwongApp', ['ngRoute'])
+var aliwongApp = angular.module('aliwongApp', ['ngResource', 'ngRoute'])
   .config(function($routeProvider) {
     $routeProvider.when('/', {
       templateUrl:'templates/Home.html',
