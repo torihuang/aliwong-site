@@ -21,5 +21,8 @@ app.use(express.static(rootPath + '/app'));
 // app.get('/data/event', events.getAll);
 // app.post('/data/event/:id', events.save);
 
-app.listen(8080);
-console.log('nihao from port 8080...')
+app.listen(process.env.PORT || 8080, function(){
+  console.log('nihao from port %d in %s mode...', this.address().port, app.settings.env);
+});
+// app.listen(8080);
+// console.log('nihao from port 8080...')
