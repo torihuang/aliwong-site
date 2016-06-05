@@ -1,11 +1,60 @@
-.homepage-background {
-  width: 100%;
-  padding: 0px;
-  margin: 0px 0px 0px 0px;
-  border: 0px;
+/*.jumbo-home {
+  background-image: url(../imgs/background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 0% 25%;*/
+/*    color: white;
+    height: 500px;*/
+/*}*/
+
+
+.jumbotron {
+  position: relative;
+  /*overflow: auto;*/
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #41a2b0;
 }
 
+.jumbotron-text {
+  display: inline;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: #fff;
+  max-width: 50%;
+}
 
+#bg {
+/*  position: absolute;
+  top: 0;
+  left: 0;*/
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  display: inline;
+}
+
+.list-group-right {
+  float: right;
+  padding-right: 10px;
+}
+
+.list-group-left {
+  float: left;
+  padding-left: 10px;
+}
+
+#tour-list {
+}
+
+.list-group-item {
+  overflow: auto;
+}
 /* app css stylesheet */
 .hoverwell:hover {
   background-color: #52575c;

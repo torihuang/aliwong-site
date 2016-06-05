@@ -1,0 +1,82 @@
+[{
+  "tours": [
+    {
+      "city": "Chicago",
+      "id": 1,
+      "date": "5/30/2016",
+      "time": "8:00 PM",
+      "location": {
+        "venue": "Chicago Theater",
+        "address": "175 N State St",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "imageUrl": "https://lh3.googleusercontent.com/-sWxKaX2xdKQ/AAAAAAAAAAI/AAAAAAAAAFQ/F88rKcqVK_o/s0-c-k-no-ns/photo.jpg"
+    },
+    {
+      "city": "Washington DC",
+      "id": 2,
+      "date": "6/15/2016",
+      "time": "7:00 PM",
+      "location": {
+        "venue": "Kennedy Center",
+        "address": "2700 F St NW",
+        "city": "Washington",
+        "state": "DC"
+      },
+      "imageUrl": "http://1vze7o2h8a2b2tyahl3i0t68.wpengine.netdna-cdn.com/wp-content/uploads/2015/07/Kennedy_Center_at_Dusk.jpg"
+    },
+    {
+      "city": "Atlanta",
+      "id": 3,
+      "date": "6/30/2016",
+      "time": "8:00 PM",
+      "location": {
+        "venue": "The Improv",
+        "address": "56 E Andrews Dr NW",
+        "city": "Atlanta",
+        "state": "GA"
+      },
+      "imageUrl": "https://www.getawaysforgrownups.com/wp-content/uploads/2014/02/IMG_4104.jpg"
+    },
+    {
+      "city": "Indianapolis",
+      "id": 4,
+      "date": "7/06/2016",
+      "time": "7:30 PM",
+      "location": {
+        "venue": "Morty's Comedy Joint",
+        "address": "3824 E. 82nd St",
+        "city": "Indianapolis",
+        "state": "IN"
+      },
+      "imageUrl": "http://standupcomedynyc.com/wp-content/uploads/2014/10/111.jpg"
+    },
+    {
+      "city": "New York",
+      "id": 5,
+      "date": "7/17/2016",
+      "time": "7:30 PM",
+      "location": {
+        "venue": "Stand Up NY",
+        "address": "236 West 78th Street",
+        "city": "New York",
+        "state": "NY"
+      },
+      "imageUrl": "https://lh6.googleusercontent.com/proxy/lwLZqRqxo3iTf1GdiKfseJX6uUdnhD4oCweram3ZLofe7bseG_pkbOZkUuXZ3E4Qt8aiQAqnZWKHCrIg1KhR4XOKmgCK4fcg6jM_-WyUh3kt-qi6rml2eKeHfcqpoyhRwipXUZvv1sTCs4WdIVEC_Xc4O6bPFdF9z_gm=w213-h320"
+    },
+    {
+      "city": "Cincinnati",
+      "id": 6,
+      "date": "7/30/2016",
+      "time": "8:30 PM",
+      "location": {
+        "venue": "Go Bananas Comedy Club",
+        "address": "8410 Market Pl Ln",
+        "city": "Cincinnati",
+        "state": "OH"
+      },
+      "imageUrl": "https://res.cloudinary.com/roadtrippers/image/upload/c_fill,fl_progressive,h_354,w_236/v1397660792/go-bananas-comedy-club-107126.jpg"
+    }
+  ]
+}]
