@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app='aliwongApp'>
 <head>
+  <base href="/">
   <meta charset="utf-8">
   <title>Ali Wong</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,14 +12,15 @@
 <body ng-cloak>
 
   <div class='navbar navbar-default'>
-    <div class='container-fluid'>
+    <div class='container-fluid' ng-controller='TourController'>
       <div class="navbar-header">
-        <a class="navbar-brand" href="#/">Ali Wong</a>
+        <a class="navbar-brand" href="/">Ali Wong</a>
       </div>
       <ul class='nav navbar-nav'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="" ng-click="gotoAnchor('tour')">Tour</a></li>
+        <li><a href="" ng-click="gotoAnchor('buzz')">Buzz</a></li>
+        <li><a href="" ng-click="gotoAnchor('contact')">Contact</a></li>
+        <li><a href="" ng-click="gotoAnchor('mailing')">Mailing List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a class="btn btn-block btn-social btn-facebook"><span class="fa fa-facebook"></span></a></li>

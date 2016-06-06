@@ -11,7 +11,8 @@
         "city": "Chicago",
         "state": "IL"
       },
-      "imageUrl": "https://lh3.googleusercontent.com/-sWxKaX2xdKQ/AAAAAAAAAAI/AAAAAAAAAFQ/F88rKcqVK_o/s0-c-k-no-ns/photo.jpg"
+      "imageUrl": "https://lh3.googleusercontent.com/-sWxKaX2xdKQ/AAAAAAAAAAI/AAAAAAAAAFQ/F88rKcqVK_o/s0-c-k-no-ns/photo.jpg",
+      "soldOut": true
     },
     {
       "city": "Washington DC",
@@ -24,7 +25,8 @@
         "city": "Washington",
         "state": "DC"
       },
-      "imageUrl": "http://1vze7o2h8a2b2tyahl3i0t68.wpengine.netdna-cdn.com/wp-content/uploads/2015/07/Kennedy_Center_at_Dusk.jpg"
+      "imageUrl": "http://1vze7o2h8a2b2tyahl3i0t68.wpengine.netdna-cdn.com/wp-content/uploads/2015/07/Kennedy_Center_at_Dusk.jpg",
+      "soldOut": false
     },
     {
       "city": "Atlanta",
@@ -37,7 +39,8 @@
         "city": "Atlanta",
         "state": "GA"
       },
-      "imageUrl": "https://www.getawaysforgrownups.com/wp-content/uploads/2014/02/IMG_4104.jpg"
+      "imageUrl": "https://www.getawaysforgrownups.com/wp-content/uploads/2014/02/IMG_4104.jpg",
+      "soldOut": false
     },
     {
       "city": "Indianapolis",
@@ -50,7 +53,8 @@
         "city": "Indianapolis",
         "state": "IN"
       },
-      "imageUrl": "http://standupcomedynyc.com/wp-content/uploads/2014/10/111.jpg"
+      "imageUrl": "http://standupcomedynyc.com/wp-content/uploads/2014/10/111.jpg",
+      "soldOut": false
     },
     {
       "city": "New York",
@@ -63,7 +67,8 @@
         "city": "New York",
         "state": "NY"
       },
-      "imageUrl": "https://lh6.googleusercontent.com/proxy/lwLZqRqxo3iTf1GdiKfseJX6uUdnhD4oCweram3ZLofe7bseG_pkbOZkUuXZ3E4Qt8aiQAqnZWKHCrIg1KhR4XOKmgCK4fcg6jM_-WyUh3kt-qi6rml2eKeHfcqpoyhRwipXUZvv1sTCs4WdIVEC_Xc4O6bPFdF9z_gm=w213-h320"
+      "imageUrl": "https://lh6.googleusercontent.com/proxy/lwLZqRqxo3iTf1GdiKfseJX6uUdnhD4oCweram3ZLofe7bseG_pkbOZkUuXZ3E4Qt8aiQAqnZWKHCrIg1KhR4XOKmgCK4fcg6jM_-WyUh3kt-qi6rml2eKeHfcqpoyhRwipXUZvv1sTCs4WdIVEC_Xc4O6bPFdF9z_gm=w213-h320",
+      "soldOut": true
     },
     {
       "city": "Cincinnati",
@@ -76,7 +81,8 @@
         "city": "Cincinnati",
         "state": "OH"
       },
-      "imageUrl": "https://res.cloudinary.com/roadtrippers/image/upload/c_fill,fl_progressive,h_354,w_236/v1397660792/go-bananas-comedy-club-107126.jpg"
+      "imageUrl": "https://res.cloudinary.com/roadtrippers/image/upload/c_fill,fl_progressive,h_354,w_236/v1397660792/go-bananas-comedy-club-107126.jpg",
+      "soldOut": false
     }
   ]
 }]

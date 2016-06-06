@@ -39,6 +39,10 @@
   display: inline;
 }
 
+.lower {
+  top: 25%;
+}
+
 .list-group-right {
   float: right;
   padding-right: 10px;
