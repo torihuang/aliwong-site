@@ -4,14 +4,7 @@
     <p>Ali Wong's standup special delves into her sexual adventures, hoarding, the rocky road to pregnancy, and why feminism is terrible.</p>
     <br>
     <br>
-<!--     <p><small>"Ali Wong’s ‘Baby Cobra’ is the most honest, rawest, funniest special I’ve seen in years. She has huge balls." <strong>-Marc Maron</strong></small></p>
-    <br>
-    <p><small>"Despite a tongue-in-cheek condemnation of feminism early in her first hourlong special, Baby Cobra, which came out on Netflix this past weekend, Ali Wong goes on to tell one of the most powerful jokes I've seen in a long time." <strong>-Vulture</strong></small></p>
-    <br>
-    <p><small>"Ali Wong is pregnant and funny as hell in Baby Cobra" <strong>-Angry Asian</strong> Man</small></p>
-    <br>
-    <br> -->
-    <button type='button' class='btn btn-default btn-lg' ng-click=''>Watch On Netflix</button>
+    <button type='button' class='btn btn-default btn-lg' ng-controller='TourController' ng-click="gotoExternalSite('https://www.netflix.com')">Watch On Netflix</button>
   </div>
   <img src='../imgs/background.jpg' id='bg' class='img-responsive'>
 </div>
@@ -21,17 +14,105 @@
 </div> -->
 
 <div class='container'>
-  <div class="page-header">
+  <div class="page-header" id='tour'>
     <h1>On Tour</h1>
   </div>
 
   <div ng-controller='TourController' id='tour-list'>
+
+    <!-- TOURS -->
     <div ng-repeat='tour in tours'>
       <div class='list-group'>
         <div ng-repeat='stop in tour.tours'>
-          <a href="#" class="list-group-item"><span class='list-group-left'>{{stop.city}}</span><span class='list-group-right'>{{stop.date}}</span></a>
+          <a href="#" class="list-group-item row" ng-click='assignTourId(stop.id)'>
+            <span class='col-sm-4' style='text-align:left;'>{{stop.city}}</span>
+            <span class='col-sm-4' style='text-align:center;color:red;' ng-show='stop.soldOut'>Sold Out</span>
+            <span class='col-sm-4' style='text-align:center;color:red;' ng-hide='stop.soldOut'></span>
+            <span class='col-sm-4' style='text-align:right;'>{{stop.date}}</span>
+          </a>
+          <div ng-show='openTour(stop.id)' class='well row'>
+            <div class='col-sm-4'>
+              <img ng-src={{stop.imageUrl}} alt='{{stop.city}}' width='100%'>
+            </div>
+            <div class='col-sm-8'>
+              <h2 ng-show='stop.soldOut' style='color:red;'>Sold Out</h2>
+              <h3>{{stop.location.venue}}</h3>
+              <h4>{{stop.date}} at {{stop.time}}</h4>
+              <hr>
+              <address>
+                {{stop.location.address}}<br>
+                {{stop.location.city}}, {{stop.location.state}}
+              </address>
+              <button type='button' class='btn btn-primary' ng-hide='stop.soldOut'>Get Tickets</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <br>
+  <br>
+
+  <!-- REVIEWS -->
+  <div class="page-header" id='buzz'>
+    <h1>Check out the Buzz</h1>
+  </div>
 </div>
+<div class='jumbotron'>
+  <div class='jumbotron-text lower'>
+    <p><small>"Ali Wong’s ‘Baby Cobra’ is the most honest, rawest, funniest special I’ve seen in years. She has huge balls." <strong>-Marc Maron</strong></small></p>
+    <br>
+    <p><small>"Despite a tongue-in-cheek condemnation of feminism early in her first hourlong special, Baby Cobra, which came out on Netflix this past weekend, Ali Wong goes on to tell one of the most powerful jokes I've seen in a long time." <strong>-Vulture</strong></small></p>
+    <br>
+    <p><small>"Ali Wong is pregnant and funny as hell in Baby Cobra" <strong>-Angry Asian</strong> Man</small></p>
+    <br>
+  </div>
+  <img src='../imgs/netflix.jpg' class='img-responsive'>
+</div>
+
+<!-- CONTACT -->
+<div class='container' ng-controller='TourController'>
+
+  <div class="page-header" id='contact'>
+    <h1>Contact Us</h1>
+  </div>
+  <div class='row' style='text-align:center;'>
+    <div class='col-sm-4'>
+      <h5>Avi Gilbert at 3Arts Entertainment</h5>
+      <a href='mailto:AGilbert@3Arts.com'>AGilbert@3Arts.com</a><br>
+      <a href='tel:+12122132259'>212-213-2259</a>
+    </div>
+    <div class='col-sm-4'>
+      <h5>Josh Lieberman at 3Arts Entertainment</h5>
+      <a href='mailto:JLieberman@3Arts.com'>JLieberman@3Arts.com</a><br>
+      <a href='tel:+13108882144'>310-888-2144</a>
+    </div>
+    <div class='col-sm-4'>
+      <h5>Ali Wong</h5>
+      <a href='mailto:ali@aliwong.com'>ali@aliwong.com</a><br>
+    </div>
+  </div>
+  <br>
+  <br>
+</div>
+
+<div class='jumbotron'>
+  <img src='../imgs/smiling-standing.jpg' class='img-responsive'>
+</div>
+
+<div class='container' ng-controller='TourController'>
+  <div class="page-header" id='mailing'>
+    <h1>Join Ali's Mailing List</h1>
+  </div>
+  <form class='form-inline' role='form' style='text-align:center;'>
+    <div class='form-group'>
+      <input type='text' class='form-control' id='name' placeholder='Name'><br><br>
+      <input type='email' class='form-control' id='email' placeholder='Email'><br><br>
+      <button type='submit' class='btn btn-primary'>Join List</button>
+    </div>
+  </form>
+</div>
+
+<br>
+<br>
