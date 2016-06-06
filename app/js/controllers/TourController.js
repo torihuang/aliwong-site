@@ -22,6 +22,10 @@ aliwongApp.controller('TourController', function TourController($scope, tourData
     }
   };
 
+  $scope.gotoExternalSite = function(site) {
+    $window.open(site, '_blank');
+  }
+
   $scope.goToNetflix = function() {
     $window.open('https://www.netflix.com', '_blank');
   }
